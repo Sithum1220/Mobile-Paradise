@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="276.0" prefWidth="766.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.ItemAddFormController">
+   <stylesheets>
+      <URL value="@../css/Pane.css" />
+      <URL value="@../css/EmployeeDashBord.css" />
+   </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtItemName" layoutX="34.0" layoutY="68.0" onKeyReleased="#txtItemNameKeyRelease" prefHeight="27.0" prefWidth="291.0" promptText="Item Name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtCatagory" layoutX="34.0" layoutY="125.0" onKeyReleased="#txtCatagoryKeyReleased" prefHeight="27.0" prefWidth="291.0" promptText="Catagory" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtBrand" layoutX="435.0" layoutY="124.0" onKeyReleased="#txtBrandKeyReleased" prefHeight="27.0" prefWidth="291.0" promptText="Brand" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtDiscription" layoutX="435.0" layoutY="68.0" onKeyReleased="#txtDescriptionKeyReleased" prefHeight="27.0" prefWidth="291.0" promptText="Discription" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXButton fx:id="btnAdd" layoutX="564.0" layoutY="211.0" onAction="#AddOnAction" prefHeight="41.0" prefWidth="161.0" styleClass="confirm-button" stylesheets="@../css/EmployeeDashBord.css" text="ADD " textFill="WHITE" />
+      <JFXTextField fx:id="txtWarrantyMonth" layoutX="34.0" layoutY="182.0" onKeyReleased="#txtWarrentyKeyRelease" prefHeight="27.0" prefWidth="291.0" promptText="Warrenty Coverage" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+   </children>
+</AnchorPane>

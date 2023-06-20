@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMouseEntered="#mousEntered" onMouseExited="#mouseExited" prefHeight="52.0" prefWidth="1367.0" stylesheets="@../css/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.SupplierBarFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#mouseKeyEntered" onMouseExited="#mouseKeyExited" prefHeight="52.0" prefWidth="1358.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="bar">
+         <children>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="1358.0" spacing="10.0">
+               <children>
+                  <Text fx:id="txtSupId" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Supplier Id" textAlignment="CENTER" wrappingWidth="128.42337799072266" />
+                  <Text fx:id="txtCompanyName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Company Name" textAlignment="CENTER" wrappingWidth="279.42337799072266" />
+                  <Text fx:id="txtLocation" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Location" textAlignment="CENTER" wrappingWidth="197.42337799072266" />
+                  <Text fx:id="txtContact" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Contact No." textAlignment="CENTER" wrappingWidth="194.42337799072266" />
+                  <Text fx:id="txtEmail" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Email" textAlignment="CENTER" wrappingWidth="279.42337799072266" />
+                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="130.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="btnDelete" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Delete">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btnupdate" onAction="#updateOnAction" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Update">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

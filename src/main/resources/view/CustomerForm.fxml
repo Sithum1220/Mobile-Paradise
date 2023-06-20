@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1440.0" styleClass="Content-text" stylesheets="@../css/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="815.0" fitWidth="1440.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/dashbordNEW.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="208.0" layoutY="25.0" onAction="#backOnAction" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: white; -fx-background-radius: 20;" styleClass="white-button">
+         <graphic>
+            <GridPane prefHeight="30.0" prefWidth="151.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.66665649414062" minWidth="10.0" prefWidth="67.33331298828125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.66668701171875" minWidth="10.0" prefWidth="132.66668701171875" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" styleClass="set-image">
+                     <image>
+                        <Image url="@../img/Icon/icons8-reply-arrow.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="     Home" wrappingWidth="66.51708984375" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="txtSearch" layoutX="406.0" layoutY="23.0" onKeyReleased="#searchOnKeyReleased" prefHeight="37.0" prefWidth="437.0" promptText="Search ID or Name" styleClass="search-bar" />
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="796.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Icon/icons8-search-96.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="46.0" layoutY="195.0" prefHeight="1.0" prefWidth="1315.0" style="-fx-background-color: white;" />
+      <ScrollPane layoutX="25.0" layoutY="299.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="1392.0" style="-fx-background-color: #34393F;">
+         <content>
+            <VBox fx:id="vBox" prefHeight="485.0" prefWidth="1367.0" style="-fx-background-color: #34393F;" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1409.0" layoutY="1.0" onMouseClicked="#closeOnMouseClick" pickOnBounds="true" preserveRatio="true" styleClass="close-Button">
+         <image>
+            <Image url="@../img/Icon/icons8-close-window-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="55.0" layoutX="25.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Icon/icons8-customer-64.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="93.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Customers" wrappingWidth="104.755859375" />
+      <Pane layoutX="872.0" layoutY="22.0" prefHeight="74.0" prefWidth="258.0" styleClass="detail-box">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="21.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icon/icons8-combo-chart-48.png" />
+               </image>
+            </ImageView>
+            <Text fill="#021075" layoutX="77.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="All Customers" />
+            <Text fx:id="txtallCustomer" fill="#021075" layoutX="94.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="notification-Num-text" text="5" textAlignment="CENTER" wrappingWidth="72.31689909100533" />
+         </children>
+      </Pane>
+      <JFXButton layoutX="1174.0" layoutY="45.0" onAction="#newCustomerOnAction" prefHeight="54.0" prefWidth="202.0" style="-fx-background-color: #fff; -fx-background-radius: 20;" styleClass="detail-box">
+         <graphic>
+            <GridPane prefHeight="30.0" prefWidth="167.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.66665649414062" minWidth="10.0" prefWidth="67.33331298828125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.66668701171875" minWidth="10.0" prefWidth="132.66668701171875" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text fx:id="txtNew" fill="#021075" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-weight: bold;" text="  New " wrappingWidth="116.12890625" GridPane.columnIndex="1" />
+                  <ImageView fx:id="addIcon" fitHeight="33.0" fitWidth="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="set-image">
+                     <image>
+                        <Image url="@../img/Icon/icons8-add.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="deleteIcon" fitHeight="41.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" styleClass="set-image" visible="false">
+                     <image>
+                        <Image url="@../img/Icon/icons8-delete-80.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="updateIcon" fitHeight="41.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" styleClass="set-image" visible="false">
+                     <image>
+                        <Image url="@../img/Icon/icons8-update-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="detailsIcon" fitHeight="41.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" styleClass="set-image" visible="false">
+                     <image>
+                        <Image url="@../img/Icon/icons8-details-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <Pane layoutX="24.0" layoutY="224.0" prefHeight="57.0" prefWidth="1392.0" style="-fx-border-color: white;">
+         <children>
+            <Text fill="WHITE" layoutX="43.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Customer ID" />
+            <Text fill="WHITE" layoutX="365.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Name" />
+            <Text fill="WHITE" layoutX="635.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Phone No." />
+            <Text fill="WHITE" layoutX="883.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="City" textAlignment="CENTER" wrappingWidth="146.42337799072266" />
+            <Text fill="WHITE" layoutX="1161.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Option" textAlignment="CENTER" wrappingWidth="139.88039016723633" />
+         </children>
+      </Pane>
+      <Pane fx:id="addUpdatePane" layoutX="644.0" layoutY="104.0" prefHeight="277.0" prefWidth="770.0" />
+      <Pane fx:id="closePane" layoutX="1177.0" layoutY="36.0" onMouseClicked="#closePaneOnMouseClick" prefHeight="72.0" prefWidth="196.0" />
+   </children>
+</AnchorPane>

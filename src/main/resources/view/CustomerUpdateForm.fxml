@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="277.0" prefWidth="770.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.CustomerUpdateFormController">
+   <stylesheets>
+      <URL value="@../css/Pane.css" />
+      <URL value="@../css/EmployeeDashBord.css" />
+   </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtFName" layoutX="32.0" layoutY="68.0" onKeyPressed="#fNameKeyRelased" prefHeight="25.0" prefWidth="199.0" promptText="Fist name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtLname" layoutX="270.0" layoutY="68.0" onKeyPressed="#lNameKeyReleased" prefHeight="25.0" prefWidth="199.0" promptText="Last name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtStreet" layoutX="27.0" layoutY="200.0" prefHeight="25.0" prefWidth="199.0" promptText="Street" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtLane" layoutX="270.0" layoutY="200.0" prefHeight="25.0" prefWidth="199.0" promptText="Lane" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtCity" layoutX="517.0" layoutY="136.0" onKeyPressed="#cityKeyReleased" prefHeight="25.0" prefWidth="199.0" promptText="City" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtNIC" layoutX="270.0" layoutY="136.0" onKeyPressed="#nicKeyReleased" prefHeight="25.0" prefWidth="199.0" promptText="NIC" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtEmail" layoutX="27.0" layoutY="136.0" onKeyReleased="#emailKeyReleased" prefHeight="25.0" prefWidth="199.0" promptText="Email" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtContactNumber" layoutX="517.0" layoutY="68.0" onKeyPressed="#contactKeyReleased" prefHeight="25.0" prefWidth="199.0" promptText="Contact Number" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXButton fx:id="btnUpdate" layoutX="547.0" layoutY="211.0" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="152.0" styleClass="login-button" stylesheets="@../css/login.css" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>

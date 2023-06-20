@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="277.0" prefWidth="770.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" stylesheets="@../css/Pane.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.SupplierOrderUpdateFormController">
+   <children>
+      <JFXComboBox fx:id="cmbItemId" layoutX="53.0" layoutY="84.0" onAction="#cmbItemIdOnAction" prefHeight="25.0" prefWidth="161.0" promptText="Item Id" style="-fx-background-color: white;">
+         <styleClass>
+            <String fx:value="cell" />
+            <String fx:value="add-employee-text" />
+         </styleClass>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtPayment" layoutX="348.0" layoutY="85.0" prefHeight="25.0" prefWidth="161.0" promptText="Payment" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtQty" layoutX="582.0" layoutY="85.0" prefHeight="25.0" prefWidth="161.0" promptText="Qty" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtItemPrice" layoutX="108.0" layoutY="150.0" prefHeight="25.0" prefWidth="161.0" promptText="Item Price" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtSellingPrice" layoutX="407.0" layoutY="150.0" prefHeight="25.0" prefWidth="161.0" promptText="Selling Price" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXButton fx:id="btnAdd" layoutX="627.0" layoutY="226.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="129.0" styleClass="login-button" stylesheets="@../css/login.css" text="Update" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="535.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty  -" wrappingWidth="46.21630859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="261.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment  -" wrappingWidth="87.21630859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item price  -" wrappingWidth="95.21630859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="296.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selling price  -" wrappingWidth="108.21630859375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnApply" layoutX="480.0" layoutY="226.0" onAction="#btnApplyOnAction" prefHeight="31.0" prefWidth="129.0" styleClass="cancel-button" stylesheets="@../css/EmployeeDashBord.css" text="Apply" />
+      <Text fx:id="buyingQtylbl" fill="WHITE" layoutX="14.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buying Qty  -" visible="false" wrappingWidth="102.21630587056279">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalLbl" fill="WHITE" layoutX="22.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total  -" wrappingWidth="62.21630587056279">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTotal" fill="WHITE" layoutX="83.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="62.21630587056279">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

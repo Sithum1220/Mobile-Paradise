@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 8.1.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CustomeBill" pageWidth="288" pageHeight="842" columnWidth="248" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="47928ebc-fe47-47e3-b0bb-4378fab2f2d5">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MobileParadise"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="id" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT c.first_name,c.last_name,co.customer_order_id,cd.item_id,cd.price,cd.qty,co.payment,co.customer_order_id FROM customer_order_detail cd join customer_order co on co.customer_order_id = cd.customer_order_id join customer c on c.customer_id = co.customer_id WHERE co.customer_order_id =$P{id}]]>
+	</queryString>
+	<field name="first_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="first_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="first_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="last_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="last_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="last_name"/>
+		<property name="com.jaspersoft.studioa.field.tree.path" value="customer"/>
+	</field>
+	<field name="customer_order_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customer_order_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_order_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer_order"/>
+	</field>
+	<field name="item_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="item_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="item_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer_order_detail"/>
+	</field>
+	<field name="price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer_order_detail"/>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer_order_detail"/>
+	</field>
+	<field name="payment" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="payment"/>
+		<property name="com.jaspersoft.studio.field.label" value="payment"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer_order"/>
+	</field>
+	<field name="COLUMN_8" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customer_order_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_order_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer_order"/>
+	</field>
+	<group name="customer_order_id">
+		<groupExpression><![CDATA[$F{customer_order_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="26" y="3" width="196" height="24" uuid="23d6b1c3-cf49-4986-aeee-a713dd05a6da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOBILE PARADISE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="75" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="4" width="122" height="30" uuid="315664a3-be9b-4748-b43d-93a82f5066f3"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[No 13 Sopping Complex, Hikkaduawa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="29" width="100" height="20" uuid="7682aa07-3418-4805-b081-3af6783104ec"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[ +94 77-752-4729]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="45" width="238" height="1" uuid="e4858d5a-2ba4-462f-8890-2cdc5fceb12c"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="2" y="48" width="76" height="12" uuid="48b2c69d-d7d6-4e20-bb76-d00f87d4c783"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Item Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="48" width="76" height="12" uuid="8f4c84d4-adf7-4ad8-b3d7-7dc7d96c2cc4"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="167" y="48" width="76" height="12" uuid="5d377ae3-d011-4879-8cd0-c7d112970268"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[QTy]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="6" width="84" height="20" uuid="4ea8fb63-1068-499f-9097-0b24fb8349bb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{item_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="6" width="82" height="20" uuid="c747b908-8d81-4836-aa01-bcfeab86818b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="6" width="82" height="20" uuid="92d3a992-7d73-4a57-89bd-5516e79361c9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="70" height="10" uuid="3f18fd99-0cc2-4c36-9273-9bfd986cd036"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[Transaction   ID :]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="0" y="12" width="90" height="10" uuid="7e925189-09de-49d0-a56a-db090d909012"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="2" width="90" height="10" uuid="39e9aca1-fe5b-4471-8174-b059a1dac613"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="43" width="70" height="10" uuid="73e72013-4e0b-4e0b-8ae2-491ab83ce33e"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[Customer Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="43" width="60" height="10" uuid="af9100ff-582e-4287-9740-cd253f6a0d6f"/>
+				<textElement>
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{first_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="43" width="100" height="14" uuid="17faa9b6-a9a9-4608-9f12-dc160a714107"/>
+				<textElement>
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{last_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="21" width="100" height="18" uuid="eda66414-6a30-4ebf-b48b-a07cb6c1c9c9"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_order_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="79" y="4" width="100" height="26" uuid="cc94eed4-99ad-4830-aea7-010b141bb48c"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="false"/>
+				</textElement>
+				<text><![CDATA[THANK YOU FOR YOUR PURCHASE]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="5" y="7" width="88" height="21" uuid="d24b96b7-83b3-4d3c-9ce9-853bf4898a12">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="97" y="7" width="18" height="21" uuid="49909428-4d88-4cf0-8e89-f41cb9152249">
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rs.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="3" width="242" height="1" uuid="40c3e3d6-3be3-4148-b037-2ebb8c3974b6"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="26" y="31" width="196" height="1" uuid="2a807ede-ef00-4d9b-b7df-bf9e73d7263a"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="130" y="5" width="100" height="24" uuid="dbe7cf22-955a-4f4f-8354-5cd6cfae5ed0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{payment}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

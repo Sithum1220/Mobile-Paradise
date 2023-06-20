@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="506.0" prefWidth="389.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.LoginScene2Controller">
+   <children>
+      <Pane fx:id="S2" layoutY="3.0" prefHeight="503.0" prefWidth="462.0">
+         <children>
+            <Label fx:id="txtWelcome" layoutX="158.0" layoutY="79.0" prefHeight="58.0" prefWidth="146.0" style="-fx-font-size: 50;" styleClass="Hello-txt" stylesheets="@../css/login.css" text="LOGIN" />
+            <JFXButton fx:id="btnSingUp" layoutX="182.0" layoutY="371.0" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="98.0" styleClass="login-button" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXTextField fx:id="txtusename" alignment="CENTER" layoutX="93.0" layoutY="200.0" onAction="#txtUserNameOnAction" onKeyReleased="#txtUsernameKeyTyped" prefHeight="26.0" prefWidth="277.0" promptText="User Name" styleClass="text-field-login" />
+            <JFXPasswordField fx:id="password" alignment="CENTER" layoutX="93.0" layoutY="275.0" prefHeight="26.0" prefWidth="277.0" promptText="Password" styleClass="text-field-login" />
+            <JFXTextField fx:id="txtShowPassword" alignment="CENTER" layoutX="93.0" layoutY="275.0" onAction="#txtPasswordOnAction" onKeyReleased="#txtPasswordKeyTyped" prefHeight="29.0" prefWidth="277.0" promptText="Password" styleClass="text-field-login" />
+            <ImageView fx:id="imgShow" fitHeight="29.0" fitWidth="48.0" layoutX="341.0" layoutY="275.0" onMouseEntered="#eyeMouseEnterd" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icon/icons8-eye-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgeClose" fitHeight="29.0" fitWidth="48.0" layoutX="341.0" layoutY="275.0" onMouseExited="#eyeExited" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icon/icons8-closed-eye-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

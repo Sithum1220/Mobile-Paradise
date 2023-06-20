@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="277.0" prefWidth="770.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.EmployeeViewFormController">
+   <stylesheets>
+      <URL value="@../css/Pane.css" />
+      <URL value="@../css/EmployeeDashBord.css" />
+   </stylesheets>
+   <children>
+      <Text fill="WHITE" layoutX="31.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID -" wrappingWidth="44.1630859375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtId" fill="WHITE" layoutX="74.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="97.42578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="189.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name -">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtName" fill="WHITE" layoutX="272.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="208.42578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="16.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtSteet" fill="WHITE" layoutX="105.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="192.42578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtLane" fill="WHITE" layoutX="105.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="192.4257868528366">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtCity" fill="WHITE" layoutX="105.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="192.42579258978367">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="322.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role    -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtRole" fill="WHITE" layoutX="393.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="97.42579877376556">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="502.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDate" fill="WHITE" layoutX="566.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="192.42578953504562">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="18.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC                  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtNIC" fill="WHITE" layoutX="140.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="177.425767891109">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="322.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtEmail" fill="WHITE" layoutX="394.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="235.42578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="17.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No.  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtContactNumber" fill="WHITE" layoutX="140.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="177.4257746040821">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblUserName" fill="WHITE" layoutX="322.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name   -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtUserName" fill="WHITE" layoutX="444.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="185.4257746040821">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblPassword" fill="WHITE" layoutX="323.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password      -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtPassword" fill="WHITE" layoutX="444.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="157.42577058076859">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btncancel" layoutX="609.0" layoutY="232.0" onAction="#CloseOnAction" prefHeight="31.0" prefWidth="129.0" styleClass="cancel-button" stylesheets="@../css/EmployeeDashBord.css" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="277.0" prefWidth="770.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.CustomerDeleteFormController">
+   <stylesheets>
+      <URL value="@../css/Pane.css" />
+      <URL value="@../css/EmployeeDashBord.css" />
+   </stylesheets>
+   <children>
+      <Text fill="WHITE" layoutX="29.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID -" wrappingWidth="44.1630859375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtId" fill="WHITE" layoutX="72.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="97.42578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="175.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name -">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtName" fill="WHITE" layoutX="258.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="208.42578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="28.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtStreet" fill="WHITE" layoutX="117.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="157.42578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtLane" fill="WHITE" layoutX="117.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="157.42576770484447">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtCity" fill="WHITE" layoutX="117.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="157.42576770484447">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="311.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date   -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDate" fill="WHITE" layoutX="381.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="192.42578953504562">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="28.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC                  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtNIC" fill="WHITE" layoutX="150.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="126.42576597630978">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="310.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtEmail" fill="WHITE" layoutX="382.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="235.42578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No.  -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtContactNumber" fill="WHITE" layoutX="148.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="126.42577460408211">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnComform" layoutX="624.0" layoutY="227.0" onAction="#ComformOnAction" prefHeight="31.0" prefWidth="105.0" styleClass="confirm-button" stylesheets="@../css/EmployeeDashBord.css" text="Comfrorm" textFill="WHITE" />
+      <JFXButton fx:id="btncancel" layoutX="506.0" layoutY="227.0" onAction="#CloseOnAction" prefHeight="31.0" prefWidth="96.0" styleClass="cancel-button" stylesheets="@../css/EmployeeDashBord.css" text="Cancel" />
+   </children>
+</AnchorPane>

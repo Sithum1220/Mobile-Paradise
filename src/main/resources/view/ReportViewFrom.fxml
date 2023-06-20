@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="685.0" prefWidth="1223.0" style="-fx-background-color: #23262a;" styleClass="reportPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.ReportViewFromController">
+   <children>
+      <JFXButton layoutX="994.0" layoutY="349.0" onAction="#BtnCustomerOrderOnAction" prefHeight="54.0" prefWidth="202.0" style="-fx-background-color: #fff; -fx-background-radius: 20;" styleClass="reportBtn" stylesheets="@../css/EmployeeDashBord.css" text="Customer Orders" textFill="#021075">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="994.0" layoutY="196.0" onAction="#btnTodayEmployeeOnAction" prefHeight="54.0" prefWidth="202.0" style="-fx-background-color: #fff; -fx-background-radius: 20;" styleClass="reportBtn" stylesheets="@../css/EmployeeDashBord.css" text="Today Employees" textFill="#021075">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="544.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Report" textAlignment="CENTER" wrappingWidth="80.8628126680851">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="473.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Icon/icons8-business-report-80-2.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="cmbYear" layoutX="272.0" layoutY="605.0" onAction="#cmbYearOnAction" prefHeight="36.0" prefWidth="237.0" promptText="Year" style="-fx-background-color: white;" styleClass="cell" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="cmbMonth" layoutX="586.0" layoutY="604.0" onAction="#cmbMonthOnAction" prefHeight="36.0" prefWidth="237.0" promptText="Month" style="-fx-background-color: white;" styleClass="cell" unFocusColor="WHITE" />
+      <LineChart fx:id="chart" layoutX="236.0" layoutY="91.0" prefHeight="447.0" prefWidth="691.0" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="YAxis" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <RadioButton fx:id="item" layoutX="81.0" layoutY="127.0" mnemonicParsing="false" onAction="#ItemOnAction" prefHeight="18.0" prefWidth="171.0" text="Most Sold Items" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="report" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="attendance" layoutX="80.0" layoutY="170.0" mnemonicParsing="false" onAction="#AttendanceOnAction" prefHeight="18.0" prefWidth="157.0" text="Attendence" textFill="WHITE" toggleGroup="$report" />
+      <RadioButton fx:id="reportLP" layoutX="80.0" layoutY="214.0" mnemonicParsing="false" onAction="#repotOnAction" prefHeight="18.0" prefWidth="157.0" selected="true" text="Profit Or Lost" textFill="WHITE" toggleGroup="$report" />
+      <BarChart fx:id="barChart" layoutX="249.0" layoutY="131.0" prefHeight="400.0" prefWidth="609.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="YAxisN" prefHeight="356.0" prefWidth="30.0" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+   <stylesheets>
+      <URL value="@../css/EmployeeDashBord.css" />
+      <URL value="@../css/Pane.css" />
+   </stylesheets>
+</AnchorPane>

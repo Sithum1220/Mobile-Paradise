@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="52.0" prefWidth="1316.0" stylesheets="@../css/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.ItemViewBarFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="1362.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="bar">
+         <children>
+            <Text fx:id="txtItemCode" fill="WHITE" layoutX="56.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="I001" />
+            <Text fx:id="txtName" fill="WHITE" layoutX="243.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Chager" />
+            <Text fx:id="txtQty" fill="WHITE" layoutX="612.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="100" />
+            <Text fx:id="txtCatagory" fill="WHITE" layoutX="718.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Chagars" textAlignment="CENTER" wrappingWidth="196.82811695337296" />
+            <Text fx:id="txtPrice" fill="WHITE" layoutX="434.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="1500" />
+            <Text fx:id="txtBrand" fill="WHITE" layoutX="931.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Samsung" textAlignment="CENTER" wrappingWidth="196.82811695337296" />
+            <Text fx:id="txtWarranty" fill="WHITE" layoutX="1188.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="12" textAlignment="CENTER" wrappingWidth="127.82811695337296" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

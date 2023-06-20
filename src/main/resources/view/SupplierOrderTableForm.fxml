@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="459.0" prefWidth="820.0" style="-fx-background-color: #23262a;" styleClass="tablePane-shape" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.SupplierOrderTableFormController">
+   <children>
+      <Pane layoutX="25.0" layoutY="28.0" prefHeight="57.0" prefWidth="774.0" style="-fx-border-color: white;">
+         <children>
+            <Text fill="WHITE" layoutX="43.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Items Id" />
+            <Text fill="WHITE" layoutX="198.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Item Name" />
+            <Text fill="WHITE" layoutX="402.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Qty" />
+            <Text fx:id="txtCityDate" fill="WHITE" layoutX="514.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Price" textAlignment="CENTER" wrappingWidth="91.25976756215096" />
+            <Text fx:id="txtCityDate1" fill="WHITE" layoutX="648.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="Option" textAlignment="CENTER" wrappingWidth="91.25976756215096" />
+         </children>
+      </Pane>
+      <ScrollPane layoutX="25.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="774.0" style="-fx-background-color: #34393F;">
+         <content>
+            <VBox fx:id="vBox" prefHeight="330.0" prefWidth="756.0" style="-fx-background-color: #34393F;" />
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/Pane.css" />
+      <URL value="@../css/EmployeeDashBord.css" />
+   </stylesheets>
+</AnchorPane>

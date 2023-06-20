@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="276.0" prefWidth="766.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.EmployeeUpdateFormController">
+   <children>
+      <JFXTextField fx:id="txtFName" layoutX="19.0" layoutY="78.0" onKeyReleased="#fNameKeyReleased" prefHeight="25.0" prefWidth="161.0" promptText="Fist name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtLname" layoutX="206.0" layoutY="78.0" onKeyReleased="#lNameKeyRelease" prefHeight="25.0" prefWidth="161.0" promptText="Last name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtStreet" layoutX="395.0" layoutY="78.0" prefHeight="25.0" prefWidth="161.0" promptText="Street" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtLane" layoutX="583.0" layoutY="78.0" prefHeight="25.0" prefWidth="161.0" promptText="Lane" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtCity" layoutX="19.0" layoutY="148.0" onKeyReleased="#cityKeyReleased" prefHeight="25.0" prefWidth="161.0" promptText="City" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtNIC" layoutX="206.0" layoutY="148.0" onKeyReleased="#nicKeyReleased" prefHeight="25.0" prefWidth="161.0" promptText="NIC" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtEmail" layoutX="593.0" layoutY="148.0" onKeyReleased="#emailKeyReleased" prefHeight="25.0" prefWidth="161.0" promptText="Email" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtContactNumber" layoutX="19.0" layoutY="215.0" onKeyReleased="#contactKeyReleased" prefHeight="25.0" prefWidth="161.0" promptText="Contact Number" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXComboBox fx:id="cmbRole" layoutX="395.0" layoutY="148.0" onAction="#cmbRoleOnAction" prefHeight="25.0" prefWidth="161.0" promptText="Role" style="-fx-background-color: white;">
+         <styleClass>
+            <String fx:value="cell" />
+            <String fx:value="add-employee-text" />
+         </styleClass>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtUserName" layoutX="206.0" layoutY="215.0" onKeyReleased="#userNameKeyReleased" prefHeight="25.0" prefWidth="161.0" promptText="User Name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" visible="false" />
+      <JFXTextField fx:id="txtPassword" layoutX="395.0" layoutY="216.0" onKeyReleased="#passwordKeyRelease" prefHeight="25.0" prefWidth="161.0" promptText="Password" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" visible="false" />
+      <JFXButton fx:id="btnAdd" layoutX="596.0" layoutY="212.0" onAction="#btnUpdateOnAction" prefHeight="45.0" prefWidth="158.0" styleClass="login-button" stylesheets="@../css/login.css" text="Update" textFill="WHITE" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/Pane.css" />
+      <URL value="@../css/EmployeeDashBord.css" />
+   </stylesheets>
+</AnchorPane>

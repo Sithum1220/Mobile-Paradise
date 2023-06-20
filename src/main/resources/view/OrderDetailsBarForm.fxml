@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#mousEntered" onMouseExited="#mouseExited" prefHeight="52.0" prefWidth="749.0" stylesheets="@../css/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.OrderDetailsBarFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="743.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="bar">
+         <children>
+            <Text fx:id="txtId" fill="WHITE" layoutX="40.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID" wrappingWidth="82.650390625" />
+            <Text fx:id="txtName" fill="WHITE" layoutX="145.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="185.693359375" />
+            <Text fx:id="txtQty" fill="WHITE" layoutX="378.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" textAlignment="CENTER" wrappingWidth="73.390625" />
+            <Text fx:id="txtPrice" fill="WHITE" layoutX="512.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" textAlignment="CENTER" wrappingWidth="91.25976145267487" />
+            <JFXButton fx:id="btnDelete" layoutX="665.0" layoutY="14.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

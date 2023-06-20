@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="277.0" prefWidth="770.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" stylesheets="@../css/Pane.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.SupplierAddFormController">
+   <children>
+      <JFXTextField fx:id="txtContactNumber" layoutX="319.0" layoutY="102.0" onKeyReleased="#txtContactKeyReleased" prefHeight="25.0" prefWidth="242.0" promptText="Contact Number" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtEmail" layoutX="30.0" layoutY="176.0" onKeyReleased="#txtEmailKeyRelease" prefHeight="25.0" prefWidth="242.0" promptText="Email" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtLocation" layoutX="319.0" layoutY="176.0" onKeyReleased="#txtLocationKeyReleased" prefHeight="25.0" prefWidth="242.0" promptText="Location" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXButton fx:id="btnAdd" layoutX="585.0" layoutY="219.0" onAction="#AddOnAction" prefHeight="33.0" prefWidth="161.0" styleClass="confirm-button" stylesheets="@../css/EmployeeDashBord.css" text="ADD " textFill="WHITE" />
+      <JFXTextField fx:id="txtCompanyName" layoutX="30.0" layoutY="101.0" onKeyReleased="#txtCompanyNameKeyReleased" prefHeight="27.0" prefWidth="242.0" promptText="Company Name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+   </children>
+</AnchorPane>

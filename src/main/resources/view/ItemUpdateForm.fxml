@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="276.0" prefWidth="766.0" style="-fx-background-color: #23262a;" styleClass="pane-shape" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.ItemUpdateFormController">
+   <stylesheets>
+      <URL value="@../css/Pane.css" />
+      <URL value="@../css/EmployeeDashBord.css" />
+   </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtItemName" layoutX="34.0" layoutY="68.0" onKeyReleased="#txtItemNameKeyRelease" prefHeight="27.0" prefWidth="291.0" promptText="Item Name" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtCatagory" layoutX="34.0" layoutY="124.0" onKeyReleased="#txtCatagoryKeyReleased" prefHeight="27.0" prefWidth="291.0" promptText="Catagory" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtBrand" layoutX="435.0" layoutY="125.0" onKeyReleased="#txtBrandKeyReleased" prefHeight="27.0" prefWidth="291.0" promptText="Brand" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtDiscription" layoutX="435.0" layoutY="68.0" onKeyReleased="#txtDescriptionKeyReleased" prefHeight="27.0" prefWidth="291.0" promptText="Discription" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXButton fx:id="btnAdd" layoutX="606.0" layoutY="233.0" onAction="#updateOnAction" prefHeight="27.0" prefWidth="120.0" styleClass="confirm-button" stylesheets="@../css/EmployeeDashBord.css" text="UPDATE" textFill="WHITE" />
+      <JFXTextField fx:id="txtWarrantyMonth" layoutX="34.0" layoutY="181.0" onKeyReleased="#txtWarrentyKeyRelease" prefHeight="27.0" prefWidth="291.0" promptText="Warrenty Coverage" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtSellingPrice" layoutX="37.0" layoutY="234.0" onKeyReleased="#txtSellingPrice" prefHeight="27.0" prefWidth="291.0" promptText="Selling Price" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+      <JFXTextField fx:id="txtQty" layoutX="435.0" layoutY="179.0" onKeyReleased="#txtQtyKeyReleased" prefHeight="27.0" prefWidth="291.0" promptText="Qty" styleClass="add-employee-text" stylesheets="@../css/EmployeeDashBord.css" />
+   </children>
+</AnchorPane>

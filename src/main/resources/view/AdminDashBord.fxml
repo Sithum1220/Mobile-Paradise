@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1440.0" stylesheets="@../css/DashBord.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.AdminDashBordController">
+   <children>
+      <ImageView fitHeight="815.0" fitWidth="1440.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../img/dashbord.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="379.0" layoutY="585.0" onAction="#btnEmployeeOnAction" prefHeight="174.0" prefWidth="191.0" styleClass="custom-button">
+         <graphic>
+            <GridPane prefHeight="169.0" prefWidth="180.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="54.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="149.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="32.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Employees This Buisness" wrappingWidth="134.48033142089844" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text" text="Employees" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/Icon/icons8-employee-64.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="60.0" top="15.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <Text fx:id="hh" fill="WHITE" layoutX="106.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="time-text" text="18" />
+      <JFXButton layoutX="657.0" layoutY="585.0" onAction="#btnSupplierOnAction" prefHeight="174.0" prefWidth="191.0" styleClass="custom-button">
+         <graphic>
+            <GridPane prefHeight="169.0" prefWidth="180.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="54.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="149.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="32.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Supplier This Buisness " wrappingWidth="134.48033142089844" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text" text="Supplier" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/Icon/icons8-supplier-64.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="60.0" top="15.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="931.0" layoutY="585.0" onAction="#btnStockOnAction" prefHeight="174.0" prefWidth="191.0" styleClass="custom-button">
+         <graphic>
+            <GridPane prefHeight="169.0" prefWidth="180.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="54.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="149.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="32.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Stock This Buisness " wrappingWidth="134.48033142089844" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text" text="   Stock" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/icons8-smartphones-96.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="60.0" top="15.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="1201.0" layoutY="585.0" onAction="#btnreportOnAction" prefHeight="174.0" prefWidth="191.0" styleClass="custom-button">
+         <graphic>
+            <GridPane prefHeight="169.0" prefWidth="180.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="54.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="149.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="32.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Report This Buisness " wrappingWidth="134.48033142089844" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button-text" text="  Report" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/Icon/icons8-report-64.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="60.0" top="15.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </graphic>
+      </JFXButton>
+      <Text fx:id="mm" fill="WHITE" layoutX="113.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="time-text" text="33" />
+      <Text fx:id="date" fill="WHITE" layoutX="80.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="date-text" text="Sat, 18 March" />
+      <Text fx:id="txtAttendence" fill="WHITE" layoutX="379.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Notification" text="18" />
+      <Text fx:id="txtLimitedStock" fill="WHITE" layoutX="657.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Notification" text="01" />
+      <Text fill="WHITE" layoutX="379.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="date-text" text="Today Employee Attendance" wrappingWidth="155.91278076171875" />
+      <Text fill="WHITE" layoutX="657.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="date-text" text="Limited Stock" wrappingWidth="155.91278076171875" />
+      <Text fill="WHITE" layoutX="187.0" layoutY="788.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="date-text" text="Admin" wrappingWidth="63.5794677734375" />
+      <Circle fill="#1fff74" layoutX="261.0" layoutY="781.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1409.0" layoutY="1.0" onMouseClicked="#closeAction" pickOnBounds="true" preserveRatio="true" styleClass="close-Button">
+         <image>
+            <Image url="@../img/Icon/icons8-close-window-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="21.0" layoutY="762.0" onMouseClicked="#logOutOnMouseClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Icon/icons8-shutdown-64.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

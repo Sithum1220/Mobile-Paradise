@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="815.0" stylesheets="@../css/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileShop.controller.SalaryBarFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="807.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="bar">
+         <children>
+            <Text fx:id="txtEmployeeId" fill="WHITE" layoutX="34.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="E001" />
+            <Text fx:id="txtSalaryId" fill="WHITE" layoutX="155.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="SA001" />
+            <Text fx:id="txtTime" fill="WHITE" layoutX="406.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="08:47:21" />
+            <Text fx:id="txtDate" fill="WHITE" layoutX="260.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="2023-04-21" />
+            <Text fx:id="txtAttendance" fill="WHITE" layoutX="575.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="25" />
+            <Text fx:id="txtSalary" fill="WHITE" layoutX="709.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Content-text" text="45000" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

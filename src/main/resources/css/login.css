@@ -1,0 +1,44 @@
+.Hello-txt{
+    font-weight: bold;
+    -fx-text-fill: #ffffff;
+    font-size: 20;
+    -fx-font-family: "Bauhaus 93";
+    -fx-effect: dropshadow( gaussian ,#17A2E3,75,0.1,0,0);
+}
+.login-button{
+    -fx-background-radius: 20;
+    -fx-background-color: #17A2E3;
+    -fx-font-size: 15;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , #42c0f3,50,0.1,0,0);
+
+}
+.login-button:hover{
+    -fx-background-radius: 20;
+    -fx-background-color: #ffffff;
+    -fx-font-size: 16;
+    -fx-text-fill:#17A2E3 ;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , #FFFFFF,50,0.1,0,0);
+
+}
+.login-box{
+    -fx-effect: dropshadow( gaussian , #dbdada,50,0.1,0,0);
+    /*-fx-effect: innershadow( gaussian , #96c7dc,50,0.1,0,0);*/
+}
+
+.text-field-login{
+    -fx-border-color: White;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: White;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+
+}
+
+.close-Button:hover{
+    -fx-effect: dropshadow( gaussian ,red,5,0.5,0,0);
+}
